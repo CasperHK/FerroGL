@@ -34,6 +34,17 @@ Join the movement. Let’s oxidize the UI layer together.
 
 ---
 
+## 🖥️ Supported Platforms
+
+FerroGL is initially targeting the following CPU architectures and microcontroller platforms:
+- **RISC-V**
+- **ARM**
+- **MCP**
+
+Support for additional platforms will be added as the project evolves.
+
+---
+
 ## 🧪 Running & Testing
 
 FerroGL is a `no_std` Rust library, so it is primarily intended for embedded and bare-metal targets. However, you can build and test the core logic on your development machine:
