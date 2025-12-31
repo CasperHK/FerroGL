@@ -31,3 +31,28 @@ As we move into 2025 and beyond, the complexity of IoT devices continues to grow
 ### 📦 Get Started
 FerroGL is currently in active development. We are looking for early adopters and contributors who are passionate about pushing the boundaries of what Rust can do on hardware.
 Join the movement. Let’s oxidize the UI layer together.
+
+---
+
+## 🧪 Running & Testing
+
+FerroGL is a `no_std` Rust library, so it is primarily intended for embedded and bare-metal targets. However, you can build and test the core logic on your development machine:
+
+```sh
+# Build the library (native target)
+cargo build
+
+# Run tests (if any are implemented)
+cargo test
+```
+
+For embedded targets, add FerroGL as a dependency in your project's `Cargo.toml` and follow your platform's build and flashing instructions.
+
+Example for adding FerroGL to your project:
+
+```toml
+[dependencies]
+ferrogl = { path = "../FerroGL" }
+```
+
+---

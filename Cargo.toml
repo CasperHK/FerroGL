@@ -1,0 +1,19 @@
+[package]
+name = "ferrogl"
+version = "0.1.0"
+edition = "2021"
+authors = ["FerroGL Contributors"]
+description = "High-Performance, Safe Embedded UI in Rust"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "ferrogl"
+path = "src/lib.rs"
+crate-type = ["lib"]
+
+[features]
+default = []
+no_std = []
+
+[dependencies]
+# Add embedded-graphics as an optional dependency in the future
