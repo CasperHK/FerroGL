@@ -88,9 +88,10 @@ impl<'a> DisplayDriver for FramebufferDisplay<'a> {
                     .copy_from_slice(&buffer[src_start..src_end]);
             }
         }
-        // Optionally trigger DMA if enabled
+        // Optionally trigger DMA if enabled. We pass an empty slice as the signal;
+        // the DmaCapable implementation accesses self.framebuffer directly.
         if self.dma_enabled {
-            self.dma_transfer(self.framebuffer);
+            self.dma_transfer(&[]);
         }
     }
 
