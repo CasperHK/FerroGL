@@ -16,4 +16,4 @@ default = []
 no_std = []
 
 [dependencies]
-# Add embedded-graphics as an optional dependency in the future
+heapless = "0.8"
